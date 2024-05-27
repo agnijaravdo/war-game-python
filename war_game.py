@@ -1,3 +1,4 @@
+import random
 
 class Card:
     def __init__(self, suite, value):
@@ -21,7 +22,12 @@ class Deck:
         return self.decks
 
 deck = Deck()
-print(deck.create_deck())
-        
+list_of_deck = deck.create_deck()
+random.shuffle(list_of_deck)
+print(list_of_deck)
+
+
+
+
 
     
