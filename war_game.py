@@ -4,11 +4,8 @@ class Card:
         self.suite = suite
         self.value = value
 
-    def __str__(self):
-        return f"{self.value} of {self.suite}"
-
     def __repr__(self) -> str:
-        return f"{self.value} of {self.suite}"
+        return f"\n{self.value} of {self.suite}"
     
 class Deck:
     def __init__(self):
